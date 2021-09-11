@@ -10,7 +10,7 @@ class Course(models.Model):
     status = models.CharField(max_length = 5)
     
     def __str__(self):
-        return f"{self.course_code} {self.course_name} {self.semester} {self.academic_year} {self.max_student} {self.status}"
+        return f"{self.course_code}"
 
 
 class Student(models.Model):
@@ -20,7 +20,7 @@ class Student(models.Model):
     years = models.CharField(max_length = 1)
 
     def __str__(self):
-        return f"{self.student_name} {self.student_id} {self.grade} {self.years}"
+        return f"{self.student_id}: {self.student_name}"
 
 
 
