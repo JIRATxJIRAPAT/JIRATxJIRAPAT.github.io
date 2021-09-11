@@ -1,1 +1,2 @@
 # JIRATxJIRAPAT.github.io
+JAI GE RE
