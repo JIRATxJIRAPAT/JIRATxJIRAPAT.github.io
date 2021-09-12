@@ -1,0 +1,11 @@
+{%extends "Course/layout.html" %}
+
+{% block body %}
+
+    <h1>Course List</h1>
+    <ul>
+    {% for Course in Course %}
+        <li>{{ Course }}</li>
+    {% endfor %}
+    </ul>
+{% endblock body %}
