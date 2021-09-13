@@ -1,0 +1,11 @@
+{%extends "Courses/layout.html" %}
+
+{% block body %}
+
+    <h1>Course List</h1>
+    <ul>
+    {% for i in Courses %}
+        <li><a href= "{% url 'Courses:course_info' i.course_code % }"> {{ i }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock body %} 

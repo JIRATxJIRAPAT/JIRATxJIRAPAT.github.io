@@ -6,5 +6,5 @@ app_name="Course"
 
 urlpatterns =[ 
     path('',views.index,name= "index"),
-    path('<course_code>', views.ShowCourse ,name='ShowCourse')
+    path('<course_code>', views.ShowCourse ,name='courseinfo')
 ]
